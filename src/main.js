@@ -11,7 +11,7 @@ class Game extends Phaser.Game {
   constructor() {
     super(1280, 720, Phaser.AUTO, 'content', null, false, false);
 
-    Object.keys(States).forEach(state => this.state.add(state, States[state]));
+    Object.keys(States).forEach((s) => this.state.add(s, States[s]));
 
     this.state.start('Boot');
   }

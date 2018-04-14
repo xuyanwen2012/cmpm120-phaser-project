@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "require-jsdoc": 0,
+    "no-console": 0
+  },
+  "globals": {
+    "phaser": true
+  },
+  "settings": {
+    "import/core-modules": [
+      "phaser",
+      "pixi",
+      "p2"
+    ]
+  }
+}
